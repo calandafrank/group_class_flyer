@@ -52,7 +52,6 @@
         }
         .btn:active { transform: scale(0.95); background-color: #05a044; }
         
-        /* 錯誤按鈕專用樣式 (可稍微區分顏色，這裡使用深灰色/黑色增加警示感，或維持綠色也可) */
         .btn-error { background-color: #333; }
         .btn-error:active { background-color: #000; }
     </style>
@@ -64,6 +63,8 @@
         <p style="margin-top: 20px; color: #666;">Loading...</p>
     </div>
 
+    
+            /* 很重要～按鈕要改新的LIFF！按鈕要改新的LIFF！按鈕要改新的LIFF！很重要所以說三次 */
     <div id="qr-screen" class="fullscreen-overlay hidden">
         <div class="block-screen">
             <h2>凝聚運動顧問｜大眾主題團班課</h2>
@@ -134,7 +135,7 @@
 `【團班體驗／購課】請點 ➤ 送出
 　
  ✦ ${params.get('name') || '未填寫'} ${params.get('phone') || '未填寫'}
- ✦ ${params.get('coursePlan') || '未選擇'} ${params.get('courseName') || '無'}`
+ ✦ ${params.get('coursePlan') || '未選擇'} ${params.get('courseName') || '無'}`;
 
                 try {
                     if (liff.isInClient()) {
